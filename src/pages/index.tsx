@@ -1,5 +1,5 @@
-import Image from "next/image";
+import { Text } from "@chakra-ui/layout";
 
 export default function Home() {
-  return <h1 children="Index page" />;
+  return <Text>Index page</Text>;
 }

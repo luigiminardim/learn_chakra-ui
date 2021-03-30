@@ -6,21 +6,14 @@ import { theme } from "../contexts/theme";
 export default class Document extends NextDocument {
   render() {
     return (
-      <Html
-        lang="pt"
-        children={[
-          <Head />,
-          <body
-            children={[
-              <ColorModeScript
-                initialColorMode={theme.config.initialColorMode}
-              />,
-              <Main />,
-              <NextScript />,
-            ]}
-          />,
-        ]}
-      />
+      <Html lang="pt">
+        <Head />
+        <body>
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     );
   }
 }
